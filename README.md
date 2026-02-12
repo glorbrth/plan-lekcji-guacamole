@@ -1,0 +1,2 @@
+# plan-lekcji-guacamole
+repodoplanulekcji

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+	<meta charset="UTF-8">
+	<title>Kreator planów</title>
+	<style>
+.time {
+	width: 4ch;
+	padding: 2px;
+}
+.input_row {
+	width: 12	ch;
+	padding: 2px;
+}
+/*table, td, th{
+	border: 1px solid;
+}
+table {
+	border-collapse: collapse;
+}*/
+</style>
+
+</head>
+<body>
+	<nav>
+		<a href="index.html">strona główna</a>
+	</nav>
+	<template id="col_template">
+			<th>
+				<span id="no">1</span>
+				<br>
+				<input id="begin" type="text" class="time">
+				-
+				<input id="end" type="text" class="time">
+			</th>
+	</template>
+	<main>
+		<table>				
+			<tr>
+				<th></th>
+				<!-- ... -->
+				<th id="new_col_header">
+					<button>+</button>
+				</th>
+			</tr>
+			<tr>
+				<td> <input type="text" class="input_row" value="pn"> </td>
+			</tr>
+			<tr>
+				<td> <input type="text" class="input_row" value="wt"> </td>
+			</tr>
+			<tr id="new_row_row">
+				<td id="new_row_btn"> <button>+</button> </td>
+			</tr>
+		</table>
+	</main>
+	<button onclick="save()">zapisz</button>
+	<script src="kreator_planow.js"></script>
+</body>
+</html>	

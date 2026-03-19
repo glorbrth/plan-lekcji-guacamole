@@ -54,7 +54,33 @@ table {
 			</tr>
 		</table>
 	</main>
+	<hr>
+	<p>nauczyciele</p>
+	<div id="teacher_list">
+	</div>
+	<form id="add_teacher_form">
+		<label for="imie">imie</label> <input type="text" name="imie">
+		<br>
+		<label for="nazwisko">nazwisko</label> <input type="text" name="nazwisko">
+		<br>
+		<!-- Brak listy oddziałów, pole tekstowe -->
+		<label for="oddzial">oddział</label> <input type="text" name="oddzial">
+		<br>
+		<label for="kolor">kolor</label> <input type="color" name="kolor">
+		<br>
+		<!-- Brak listy przedmiotów, pole tekstowe -->
+		<label for="przedmioty">przedmioty (oddziel przecinkiem)</label> <input type="text" name="przedmioty">
+		<br>
+		<input type="submit" value="Dodaj nauczyciela">
+	</form>
+
+	<hr>
 	<button onclick="save()">zapisz</button>
+	<hr>
+	<form id="load_form">
+		<textarea name="data"></textarea> <br>
+		<input type="submit" value="Wczytaj">
+	</form>
 	<script src="kreator_planow.js"></script>
 </body>
 </html>	
